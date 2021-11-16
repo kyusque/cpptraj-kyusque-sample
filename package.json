@@ -1,0 +1,25 @@
+{
+    "name": "cpptraj-kyusque-sample",
+    "displayName": "cpptraj-kyusque-sample",
+    "description": "unofficial syntax highlight sample for cpptraj",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cpptraj.kyusque",
+            "aliases": ["cpptraj", "cpptraj.kyusque"],
+            "extensions": [".cpptrajin"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cpptraj.kyusque",
+            "scopeName": "source.cpptrajin.kyusque",
+            "path": "./syntaxes/cpptraj.kyusque.tmLanguage.json"
+        }]
+    }
+}

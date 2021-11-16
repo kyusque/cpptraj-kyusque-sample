@@ -1,0 +1,9 @@
+# rmsd analysis for entry1
+parm entry1/prmtop
+trajin entry1/mdcrd 1 last 1
+
+autoimage anchor @CA,C,O,N origin
+align @CA,C,N first
+rmsd rmsd_align@CA,C,N @CA,C,N out entry1/output.dat nofit first
+rmsd out entry1/output.dat nofit first
+run
