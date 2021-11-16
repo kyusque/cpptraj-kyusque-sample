@@ -1,7 +1,7 @@
 {
     "name": "cpptraj-kyusque-sample",
     "displayName": "cpptraj-kyusque-sample",
-    "description": "unofficial syntax highlight sample for cpptraj",
+    "description": "[Not Recommended, WIP] unofficial syntax highlight sample for cpptraj",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.62.0"
@@ -9,6 +9,10 @@
     "categories": [
         "Programming Languages"
     ],
+    "publisher": "kyusque",
+    "repository": {
+        "url": "github.com/kyusque/cpptraj-kyusque-sample"
+    },
     "contributes": {
         "languages": [{
             "id": "cpptraj.kyusque",
