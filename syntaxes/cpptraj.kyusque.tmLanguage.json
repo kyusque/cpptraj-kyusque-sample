@@ -3,29 +3,13 @@
 	"name": "cpptraj",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
+			"include": "#comment"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.cpptraj.kyusque",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.cpptraj.kyusque",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.cpptraj.kyusque",
-					"match": "\\\\."
-				}
-			]
+		"comment": {
+			"name": "comment.line.kyusque",
+			"match": "#.*"
 		}
 	},
 	"scopeName": "source.cpptrajin.kyusque"
