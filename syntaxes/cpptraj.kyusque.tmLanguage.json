@@ -4,12 +4,74 @@
 	"patterns": [
 		{
 			"include": "#comment"
+		},
+		{
+			"include": "#support-functions"
+		},
+		{
+			"include": "#support-keywords"
 		}
 	],
 	"repository": {
 		"comment": {
 			"name": "comment.line.kyusque",
 			"match": "#.*"
+		},
+		"support-functions": {
+			"patterns": [
+				{
+					"name": "support.function.kyuqque",
+					"match": "\\bparm\\b"
+				},
+				{
+					"name": "support.function.kyuqque",
+					"match": "\\btrajin\\b"
+				},
+				{
+					"name": "support.function.kyuqque",
+					"match": "\\bautoimage\\b"
+				},
+				{
+					"name": "support.function.kyuqque",
+					"match": "\\balign\\b"
+				},
+				{
+					"name": "support.function.kyuqque",
+					"match": "\\brmsd\\b"
+				},
+				{
+					"name": "support.function.kyuqque",
+					"match": "\\brun\\b"
+				}
+			]
+		},
+		"support-keywords": {
+			"patterns": [
+				{
+					"name": "keyword.kyusque",
+					"match": "\\blast\\b"
+				},
+				{
+					"name": "keyword.kyusque",
+					"match": "\\banchor\\b"
+				},
+				{
+					"name": "keyword.kyusque",
+					"match": "\\borigin\\b"
+				},
+				{
+					"name": "keyword.kyusque",
+					"match": "\\bfirst\\b"
+				},
+				{
+					"name": "keyword.kyusque",
+					"match": "\\bout\\b"
+				},
+				{
+					"name": "keyword.kyusque",
+					"match": "\\bnofit\\b"
+				}
+			]
 		}
 	},
 	"scopeName": "source.cpptrajin.kyusque"
